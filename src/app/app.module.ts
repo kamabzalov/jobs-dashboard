@@ -7,7 +7,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule, NgbModule],
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    AppRoutingModule,
+    NgbModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

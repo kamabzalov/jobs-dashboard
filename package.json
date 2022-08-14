@@ -10,7 +10,10 @@
     "dev:ssr": "ng run jobs-board:serve-ssr",
     "serve:ssr": "node dist/jobs-board/server/main.js",
     "build:ssr": "ng build && ng run jobs-board:server",
-    "prerender": "ng run jobs-board:prerender"
+    "prerender": "ng run jobs-board:prerender",
+    "lint": "ng lint --fix",
+    "style-lint": "npx stylelint \"**/*.scss\"",
+    "prettier": "npx prettier --write ."
   },
   "private": true,
   "dependencies": {
@@ -38,6 +41,11 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.1.0",
+    "@angular-eslint/builder": "14.0.2",
+    "@angular-eslint/eslint-plugin": "14.0.2",
+    "@angular-eslint/eslint-plugin-template": "14.0.2",
+    "@angular-eslint/schematics": "14.0.2",
+    "@angular-eslint/template-parser": "14.0.2",
     "@angular/cli": "~14.1.0",
     "@angular/compiler-cli": "^14.1.0",
     "@nguniversal/builders": "^14.0.3",
